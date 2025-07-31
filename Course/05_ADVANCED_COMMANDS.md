@@ -10,11 +10,13 @@
 * `less` Permite ver archivos largos, paginando su contenido (sales pulsando `q`).
 * `more` Similar a less, pero como menos funcionalidades (por ejemplo, no puedes desplazarte hacia atrás).
 * `head` Muestra las primeras 10 líneas de un archivo por defecto.
-	* `head -n 20` Para especificar el número de líneas líneas.
+	* `head -n 20` Para especificar el número de líneas.
 * `tail` Muestra las últimas 10 líneas de un archivo por defecto.
-	* `tail -n 20` Para especificar el número de líneas líneas.
+	* `tail -n 20` Para especificar el número de líneas.
 	* `tail -f file.log` Muy útil para ver logs en tiempo real mientras crecen.
 
+> [!TIP]
+>
 > Para desplazarte por la paginación es habitual usar flechas, barra espaciadora, scroll o PgUp/PgDown.
 
 ## Búsqueda y recuento
@@ -54,7 +56,7 @@ Ejemplos:
 
 Ejemplo:
 
-* `cat nombre_archivo | grep "texto a bucar" | wc -w` Muestra el contenido de un archivo, busca un texto en ese contenido y realiza el recuento de palabras resultantes de la búsqueda.
+* `cat nombre_archivo | grep "texto a buscar" | wc -w` Muestra el contenido de un archivo, busca un texto en ese contenido y realiza el recuento de palabras resultantes de la búsqueda.
 
 ## Variables de entorno
 
@@ -71,16 +73,16 @@ Las variables locales solo viven en la sesión actual.
 
 Las variables globales más allá de la sesión (en todos los programas lanzados desde esa terminal de la sesión).
 
-Algunas variables globales ya existentes:
+**Algunas variables globales ya existentes:**
 
 * `echo $HOME` Muestra la ruta del directorio home del usuario.
 * `echo $PATH` Muestra una lista de rutas separadas conocidas por el sistema por defecto.
 
-Creación de una variable global:
+**Creación de una variable global:**
 
 * `export NOMBRE_VARIABLE="valor asociado a la variable"`
 
-Creación de una variable global permanente:
+**Creación de una variable global permanente:**
 
 Para ello debes agregar la línea de la exportación a tu archivo de configuración de la shell. Los archivos de configuración más habituales creados en tu directorio de usuario son:
 
@@ -91,4 +93,4 @@ Para ello debes agregar la línea de la exportación a tu archivo de configuraci
 
 ---
 
-[[◀️ Lección anterior](./04_FILE_MANAGEMENT_EXERCISES.md)] [[Inicio 🔼](../README.md)]
+[[◀️ Lección anterior](./04_FILE_MANAGEMENT_EXERCISES.md)] [[Inicio 🔼](../README.md)] [[Siguiente lección ▶️](./06_ADVANCED_COMMANDS_EXERCISES.md)]
