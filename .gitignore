@@ -1,3 +1,5 @@
 Scripts/*.sh
 scripts/*.sh
 scripts/*/*.sh
+*/*.txt
+.gitignore
