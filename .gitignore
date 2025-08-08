@@ -1,1 +1,3 @@
 Scripts/*.sh
+scripts/*.sh
+scripts/*/*.sh
